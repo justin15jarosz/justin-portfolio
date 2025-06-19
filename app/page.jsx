@@ -17,8 +17,13 @@ const Home = () => {
               Hello I'm <br />{" "}
               <span className="text-accent">Justin Jarosz</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
-              This is where mission statement/tell me about yourself
+            <p className="max-w-[90%] mb-9 text-white/80">
+              Passionate and results-driven software engineer focused on
+              creating innovative, efficient, and scalable solutions. With a
+              strong foundation in problem-solving, I thrive in dynamic
+              environments and am committed to continuously learning and
+              leveraging the latest technologies to deliver high-quality,
+              reliable software that drives business success.
             </p>
 
             {/* Socials & Button */}

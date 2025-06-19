@@ -22,7 +22,7 @@ const Photo = () => {
         >
           <div className="w-[298px] h-[298px] xl:w-[498px] xl:h-[498px] mix-blend-lighten absolute">
             <Image
-              src="/globe.svg"
+              src="/assets/resume/resume_photo.jpg"
               priority
               quality={100}
               fill
@@ -39,10 +39,10 @@ const Photo = () => {
           xmlns="http://www.w3.org/2000/svg"
         >
           <motion.circle
-            cx="253"
-            cy="253"
+            cx="250"
+            cy="250"
             r="250"
-            stroke="#00ff99"
+            stroke="#36bbf0"
             strokeWidth="4"
             strokeLinecap="round"
             strokeLinejoin="round"
