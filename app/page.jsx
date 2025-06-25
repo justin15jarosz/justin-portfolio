@@ -33,8 +33,14 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <span>Download CV</span>
-                <FiDownload className="text-xl"></FiDownload>
+                <a
+                  href="/assets/resume/resume.png"
+                  download="Justin_Jarosz_Software_Engineer_Resume.png"
+                  className="flex flex-row items-center"
+                >
+                  <span className="mr-2">Download CV</span>
+                  <FiDownload className="text-xl"></FiDownload>
+                </a>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social
