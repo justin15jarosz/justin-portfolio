@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
+import Link from "next/link";
 
 // Components
 import Social from "@/components/Social";
@@ -33,14 +34,16 @@ const Home = () => {
                 size="lg"
                 className="uppercase flex items-center gap-2"
               >
-                <a
-                  href="/assets/resume/resume.png"
-                  download="Justin_Jarosz_Software_Engineer_Resume.png"
+                <Link
+                  href="./Justin_Jarosz_Software_Engineer_Resume.pdf"
+                  target="_blank"
+                  alt="my cv"
+                  rel="noopener noreferrer"
                   className="flex flex-row items-center"
                 >
                   <span className="mr-2">Download CV</span>
                   <FiDownload className="text-xl"></FiDownload>
-                </a>
+                </Link>
               </Button>
               <div className="mb-8 xl:mb-0">
                 <Social
