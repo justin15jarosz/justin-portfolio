@@ -6,6 +6,7 @@ import Link from "next/link";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import Contact from "@/components/Contact";
 
 const Home = () => {
   return (
@@ -35,7 +36,7 @@ const Home = () => {
                 className="uppercase flex items-center gap-2"
               >
                 <Link
-                  href="./Justin_Jarosz_Software_Engineer_Resume.pdf"
+                  href="./assets/resume/Justin_Jarosz_Backend_Engineer_Resume.pdf"
                   target="_blank"
                   alt="my cv"
                   rel="noopener noreferrer"
@@ -61,6 +62,7 @@ const Home = () => {
       </div>
 
       <Stats />
+      <Contact />
     </section>
   );
 };
