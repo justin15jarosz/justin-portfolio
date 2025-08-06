@@ -1,6 +1,6 @@
-"use client";
-
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import React from "react";
+import Typewriter from "./Typewriter";
 
 const info = [
   {
@@ -20,30 +20,36 @@ const info = [
   },
 ];
 
-export const Contact = () => {
+export const Contact = ({ onClose }) => {
   return (
-    <section className="pt-4 pb-12 xl:pt-4 xl:pb-0">
-      <div className="container mx-auto">
-        <div className="flex flex-wrap gap-6 max-w-[80vh] mx-auto xl:max-w-none">
-          {info.map((item, index) => {
-            return (
-              <div
-                key={index}
-                className="flex-1 flex items-center justify-center gap-4 xl:justify-start"
-              >
-                <div className="w-[52px] h-[52px] xl:w-[72px]xl:h-[72px] bg-[#27272c] text-accent rounded-md flex items-center justify-center">
-                  <div className="text-[28px]">{item.icon}</div>
-                </div>
-                <div className="flex-1">
-                  <p className="text-white/60">{item.title}</p>
-                  <h3 className="text-xl">{item.description}</h3>
-                </div>
+    <div className="bg-white dark:bg-gray-800 h-full p-4 relative">
+      <button
+        onClick={onClose}
+        className="absolute top-4 left-4 text-gray-800 dark:text-white"
+      >
+        &lt; Back
+      </button>
+      <div className="mt-10">
+        <h1 className="text-2xl text-black font-bold mb-4 text-center">
+          Contact Information
+        </h1>
+        {info.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center gap-4 xl:justify-start"
+            >
+              <div className="w-[52px] h-[52px] bg-[#27272c] text-accent rounded-md flex items-center justify-center my-2">
+                <div className="text-[28px]">{item.icon}</div>
               </div>
-            );
-          })}
-        </div>
+              <p className="text-gray-800 text-sm text-center mb-5">
+                <Typewriter text={item.description} />
+              </p>
+            </div>
+          );
+        })}
       </div>
-    </section>
+    </div>
   );
 };
 
